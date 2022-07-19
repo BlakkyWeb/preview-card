@@ -1,0 +1,202 @@
+:root{
+    --BrightOrange-: 31, 77%, 52%;
+    --DarkCyan-: 184, 100%, 22%;
+    --VeryDarkCyan-: 179, 100%, 13%;
+    --TransparentWhite-: 0, 0%, 100%, 0.75;
+    --VeryLightGray-: 0, 0%, 95%;
+    --font1-: 'Big Shoulders Display', cursive;
+    --font2-: 'Lexend Deca', sans-serif;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body, div, img, h2, p, button{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    height: 100vh;
+    background-color: hsl(var(--VeryLightGray-));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--VeryLightGray-));
+}
+
+.container{
+    display: flex;
+}
+
+.sedan{
+    background-color: hsl(var(--BrightOrange-));
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.suv{
+    background-color: hsl(var(--DarkCyan-));
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.luxury{
+    background-color: hsl(var(--VeryDarkCyan-));
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+img{
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: var(--font1-);
+    
+}
+
+p{
+    margin-bottom: 50px;
+    font-family: var(--font2-);
+    color: hsl(var(--TransparentWhite-));
+    font-size: 12px;
+    max-width: 168px;
+    line-height: 20px;
+}
+
+button{
+    background-color: hsl(var(--VeryLightGray-));
+    color: transparent;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.sedan-button{
+    color: hsl(var(--BrightOrange-));
+    font-size: 10px;
+    cursor: pointer;
+}
+.sedan-button:hover{
+    background-color: hsl(var(--BrightOrange-));
+    color: white;
+    border: 1px solid white;
+}
+
+.suv-button{
+    color: hsl(var(--DarkCyan-));
+    font-size: 10px;
+    cursor: pointer;
+}
+.suv-button:hover{
+    background-color: hsl(var(--DarkCyan-));
+    color: white;
+    border: 1px solid white;
+}
+
+.luxury-button{
+    color: hsl(var(--VeryDarkCyan-));
+    font-size: 10px;
+    cursor: pointer;
+}
+.luxury-button:hover{
+    background-color: hsl(var(--VeryDarkCyan-));
+    color: white;
+    border: 1px solid white;
+}
+
+@media (max-width: 320px){
+    .main-container{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0px;
+    }
+
+    .sedan{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px){
+    .main-container{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0px;
+    }
+
+    .sedan{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+}
+
+@media (max-width: 425px){
+    .main-container{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0px;
+    }
+
+    .sedan{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+}
